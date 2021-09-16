@@ -1,5 +1,13 @@
 <template>
-    <section class="section">
-        <h1 class="title">Página de contato</h1>
-    </section>
+  <section class="hero is-large is-info">
+  <div class="hero-body">
+    <p class="title">
+      Large hero
+    </p>
+    <p class="subtitle">
+      Large subtitle
+    </p>
+  </div>
+</section>
 </template>
+
