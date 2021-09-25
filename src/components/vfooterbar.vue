@@ -1,4 +1,20 @@
+<template>
 <footer class="footer">
+  <nav class="level">
+  <p class="level-item has-text-centered">
+    <a class href="#/contato">Contato</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class href="#/duvidas">Dúvidas frequentes</a>
+  </p>
+  
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Reservations</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Contact</a>
+  </p>
+</nav>
   <div class="content has-text-centered">
     <p>
       <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
@@ -7,3 +23,4 @@
     </p>
   </div>
 </footer>
+</template>

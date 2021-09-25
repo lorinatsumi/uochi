@@ -18,6 +18,7 @@
             <b-navbar-item href="#/contato">
                 Contato
             </b-navbar-item>
+            
         </template>
 
          <template #end>

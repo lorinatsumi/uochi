@@ -1,10 +1,10 @@
 <template>
-  <section class="section">
+  
   <section class="section">
   
     <div class="columns is-vcentered">
 
-        <div class="column">
+        <div class="column is-5">
           <section class="section">
              <div class="content is-large">
             <h1 class="title is-size-1">Limpeza descomplicada.</h1>
@@ -20,8 +20,8 @@
           </section>
         </div>        
         
-          <div class="column">
-            <img src="@/assets/imageminicio.png" width="500" height="400">
+          <div class="column is-7">
+            <img src="@/assets/clean1.png">
             </div>
             
     </div>
@@ -40,74 +40,53 @@
         </div>
     <br>    
 
-    <div class="columns">
+    <div class="columns has-text-centered">
       <div class="column">
-         <img src="@/assets/icone.png"
+         <img src="@/assets/icone (9).png"
          class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Praticidade</h4>      
+        <h4 class="subtitle has-text-centered">Praticidade</h4>
+        <h7>Tenha seu lar limpo novamente com alguns cliques</h7>       
       </div>
       <div class="column">
-         <img src="@/assets/icone.png" class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Praticidade</h4>      
+         <img src="@/assets/icone (7).png" class="por-que-uochi">
+        <h4 class="subtitle has-text-centered">Confiança e liberdade de escolha</h4>
+        <h7>Conte com um perfil completo dos profissionais e avaliações</h7>       
       </div>
       <div class="column">
-         <img src="@/assets/icone.png" class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Praticidade</h4>      
+         <img src="@/assets/icone (4).png" class="por-que-uochi">
+        <h4 class="subtitle has-text-centered">Serviço sob suas necessidades</h4>   
+         <h7>Escolha a quantidade de horas e pague por aquilo que você realmente precisa</h7>     
       </div>
-      <div class="column">
-         <img src="@/assets/icone.png" class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Praticidade</h4>      
+     
+    </div>
+    <br>
+    <br>
+    <div class="columns has-text-centered">
+      
+      <div class="column is-2">
+        &nbsp;
+      </div>     
+      <div class="column is-4">
+         <img src="@/assets/icone (8).png" class="por-que-uochi">
+        <h4 class="subtitle has-text-centered">Pagamento online</h4>
+         <h7>Pague de onde estiver de forma prática</h7>      
       </div>
-      <div class="column">
-         <img src="@/assets/icone.png" class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Praticidade</h4>      
+      <div class="column is-4">
+         <img src="@/assets/icone (10).png" class="por-que-uochi">
+        <h4 class="subtitle has-text-centered">Produtos de limpeza opcionais</h4> 
+         <h7 class = "has-text-centered"> Não se preocupe com quais produtos comprar
+           <br> e ainda economize dinheiro </h7>  
+           
       </div>
+      <div class="column is-2">
+        &nbsp;
+      </div> 
     </div>
 
       </section>
 
-  <div class="content is-medium has-text-centered">
-         <h2>Dúvidas frequentes</h2>
-        </div>
   
-  <section class= "p-6">
-      
-        <b-collapse
-            class="card"
-            animation="slide"
-            v-for="(duvida, index) of duvidas"
-            :key="index"
-            :open="isOpen == index"
-            @open="isOpen = index">
-            <template #trigger="props">
-                <div
-                    class="card-header"
-                    role="button"
-                >
-                    <p class="card-header-title">
-                        {{ duvida.title }}
-                    </p>
-                    <a class="card-header-icon">
-                        <b-icon
-                            :icon="props.open ? 'menu-down' : 'menu-up'">
-                        </b-icon>
-                    </a>
-                </div>
-            </template>
-            <div class="card-content">
-                <div class="content">
-                    {{ duvida.text }}
-                </div>
-            </div>
-        </b-collapse>
 
-    </section>
-
-
-    
-
-
-  </section>
   </section>
 </template>
 <style>
@@ -115,26 +94,3 @@
     width: 150px;
   }
 </style>
-<script>
-    export default {
-        data() {
-            return {
-                isOpen: 0,
-                duvidas: [
-                {
-                    title: 'Quais as formas de pagamento?',
-                    text: 'Os pagamentos são feitos online. Até o momento aceitamos cartão de crédito, transferência bancária, Mercado Pago, PIX e Picpay. As transações de cartão de crédito são realizadas através do Mercado Pago, um dos maiores gateways de pagamento do Brasil. Muito fácil e prático!'
-                },
-                {
-                    title: 'Title 2',
-                    text: 'Text 2'
-                },
-                {
-                    title: 'Title 3',
-                    text: 'Text 3'
-                }
-                ]
-            }
-        }
-    }
-</script>
