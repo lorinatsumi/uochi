@@ -1,0 +1,66 @@
+<template>
+<div>
+  <div>
+    <section class="has-bg-img hero" :style="{height:'513px', backgroundImage: 'url(' + require('@/assets/quemsomos.png') + ')' }">
+      <div class="hero-body">
+          <p class="subtitle has-text-black">.
+        </p>
+                 <p class="subtitle has-text-black">.
+        </p>
+            <h1 class="title has-text-white is-size-1">. Nossa História</h1>
+         <p class="subtitle has-text-black">.
+        </p>
+        <p class="colums subtitle has-text-white-ter">
+         .............. E essa receita de bolo simples pode ficar ainda mais gostosa se preparada na  hora do café!      Principalmente se você gosta de acompanhar a sua fatia de bolo com essa bebida deliciosa.
+        </p>
+      </div>
+    </section>
+  </div>
+
+
+  <div>
+     <section class="section">
+       <div class= "columns">
+        <div class="column is-4">
+             <h1 class="title has-text-grey-dark is-size-2">Nossa Missão</h1> </div>
+       <div class= "column is-4">
+         Descomplicar a limpeza, proporcionando tempo, praticidade e conforto para o dia a dia das pessoas.</div>
+      <div class= "column is-4"> 
+         E ajudar os profissionais de limpeza doméstica do mundo a serem independentes e decolarem as suas carreiras.</div>  
+     </div>
+   </section>
+  </div>
+
+
+<div class="box">
+  <h1 class="title has-text-centered">Valores</h1>
+    <div class="columns has-text-centered">
+      <div class="column">
+         <img src="@/assets/heroi.png"
+         class="valores">
+        <h4 class="subtitle has-text-centered">Valorização humana</h4>   </div>
+      <div class="column">
+         <img src="@/assets/confianca.png"
+         class="valores">
+        <h4 class="subtitle has-text-centered">Confiança e transparência</h4>      
+      </div>
+      <div class="column">
+         <img src="@/assets/crescimento.png"
+         class="valores">
+        <h4 class="subtitle has-text-centered">Crescimento mútuo</h4>   </div>
+      <div class="column">
+         <img src="@/assets/tempo.png" class="valores">
+        <h4 class="subtitle has-text-centered">Valorização do tempo</h4>
+       </div>
+      <div class="column">
+         <img src="@/assets/foguetee.png" class="valores">
+        <h5 class="subtitle has-text-centered">Inovação constante</h5>    </div>
+     </div>
+</div>
+</div>
+</template>
+<style>
+  .valores{
+    width: 130px;
+  }
+</style>

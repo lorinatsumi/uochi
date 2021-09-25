@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import Home from '@/views/home.vue';
 import Contato from '@/views/contato.vue';
 import Duvidas from '@/views/duvidas.vue';
+import Quemsomos from '@/views/quemsomos.vue';
 
 const routes = [
     {
@@ -22,6 +23,12 @@ const routes = [
         path: '/duvidas',
         name: 'Duvidas',
         component: Duvidas,
+        meta: {  }
+    },
+    {
+        path: '/quemsomos',
+        name: 'Quemsomos',
+        component: Quemsomos,
         meta: {  }
     }
 ]
