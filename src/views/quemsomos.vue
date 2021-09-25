@@ -1,18 +1,17 @@
 <template>
 <div>
   <div>
-    <section class="has-bg-img hero" :style="{height:'513px', backgroundImage: 'url(' + require('@/assets/quemsomos.png') + ')' }">
+    <section class="has-bg-img hero" :style="{height:'513px', backgroundImage: 'url(' + require('@/assets/capaaa.png') + ')' }">
       <div class="hero-body">
-          <p class="subtitle has-text-black">.
+
+            <p class="subtitle has-text-black"> 
         </p>
-                 <p class="subtitle has-text-black">.
-        </p>
-            <h1 class="title has-text-white is-size-1">. Nossa História</h1>
-         <p class="subtitle has-text-black">.
-        </p>
-        <p class="colums subtitle has-text-white-ter">
-         .............. E essa receita de bolo simples pode ficar ainda mais gostosa se preparada na  hora do café!      Principalmente se você gosta de acompanhar a sua fatia de bolo com essa bebida deliciosa.
-        </p>
+            <h1 class="title has-text-white is-size-1"> Nossa História</h1>
+
+        <div class="colums subtitle has-text-white-ter">
+          <div class= "column is-8">
+          O segredo do sucesso de uma boa receita são os ingredientes e o modo de preparo correto. Por isso, sempre use alimentos de boa qualidade e preste muito atenção durante os processo. Assim, você garante um bolo simples fofinho e cheio de sabor!  </div>
+        </div>
       </div>
     </section>
   </div>
