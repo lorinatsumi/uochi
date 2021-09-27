@@ -5,6 +5,7 @@ import Home from '@/views/home.vue';
 import Contato from '@/views/contato.vue';
 import Duvidas from '@/views/duvidas.vue';
 import Quemsomos from '@/views/quemsomos.vue';
+import Parceiros from '@/views/parceiros.vue';
 
 const routes = [
     {
@@ -29,6 +30,12 @@ const routes = [
         path: '/quemsomos',
         name: 'Quemsomos',
         component: Quemsomos,
+        meta: {  }
+    },
+    {
+        path: '/parceiros',
+        name: 'Parceiros',
+        component: Parceiros,
         meta: {  }
     }
 ]

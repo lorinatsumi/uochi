@@ -9,17 +9,20 @@
   </p>
   
   <p class="level-item has-text-centered">
-    <a class="link is-info">Reservations</a>
+    <a class="link is-info">Termos e Condições</a>
   </p>
   <p class="level-item has-text-centered">
-    <a class="link is-info">Contact</a>
+    <a class="link is-info">Política de privacidade</a>
   </p>
 </nav>
   <div class="content has-text-centered">
     <p>
-      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      <br> 
+      <br>
+      <br>
+      <strong>Uochi</strong> feita com ❤ em Curitiba.
+      <br> 
+      <a href="http://opensource.org/licenses/mit-license.php">Uochi©</a>  All rights reserved 
     </p>
   </div>
 </footer>

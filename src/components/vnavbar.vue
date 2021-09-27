@@ -15,8 +15,8 @@
             <b-navbar-item href="#/quemsomos">
                 Quem somos
             </b-navbar-item>
-            <b-navbar-item href="#/contato">
-                Contato
+            <b-navbar-item href="#/parceiros">
+                Profissionais
             </b-navbar-item>
             
         </template>
