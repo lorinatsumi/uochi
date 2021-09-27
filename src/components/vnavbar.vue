@@ -29,11 +29,9 @@
                     </a>
                     <a class="button is-light">
                         Log in
-                    </a>
-                </div>
+                </a>
+              </div>
             </b-navbar-item>
         </template>
     </b-navbar>
-    
 </template>
-
