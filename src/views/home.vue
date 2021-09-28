@@ -7,7 +7,7 @@
         <div class="column is-5">
           <section class="section">
              <div class="content is-large">
-            <h1 class="title is-size-1">Limpeza descomplicada.</h1>
+            <h1 class="title is-size-1">TESTANTO.</h1>
             </div>
           
           <h2 class="subtitle">Otimize seu tempo. Nós cuidamos do seu conforto!</h2>
