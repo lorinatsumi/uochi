@@ -9,7 +9,7 @@
             <b-navbar-item href="#/">
                 Início
             </b-navbar-item>
-            <b-navbar-item href="#/contato">
+            <b-navbar-item href="#/comofunciona">
                 Como funciona
             </b-navbar-item>
             <b-navbar-item href="#/quemsomos">
@@ -30,6 +30,9 @@
                     <a class="button is-primary">
                         <strong>Sign up</strong>
                     </a>
+
+
+
                     <a class="button is-light">
                         Log in
                     </a>
@@ -37,6 +40,8 @@
             </b-navbar-item>
         </template>
     </b-navbar>
-    
 </template>
+
+
+
 
