@@ -7,7 +7,7 @@
         <div class="column is-5">
           <section class="section">
              <div class="content is-large">
-            <h1 class="title is-size-1">TESTANTO.</h1>
+            <h1 class="title is-size-1">Limpeza descomplicada.</h1>
             </div>
           
           <h2 class="subtitle">Otimize seu tempo. Nós cuidamos do seu conforto!</h2>
@@ -114,6 +114,7 @@
             <section :class="`hero is-medium is-${carousel.color}`" :style="{ backgroundImage: 'url(' + carousel.fundo + ')' }">
                 <div class="hero-body has-text-centered">
                     <h1 class="title is-size-5">{{carousel.text}}</h1>
+                    <p class="is-size-6">{{carousel.subtitulo}}</p>
                 </div>
             </section>
         </b-carousel-item>
@@ -135,10 +136,12 @@ export default {
     data(){
         return {
             carousels: [
-                { text : '"A primeira experiência com a Uochi foi extremamente positiva. Fiz minha solicitação do serviço pelo celular, o agendamento foi confirmado e no outro dia quando cheguei em meu apartamento estava tudo devidamente limpo."'
+                { subtitulo:"Volnei Fernandes - Curitiba, PR",
+                text : '"A primeira experiência com a Uochi foi extremamente positiva. Fiz minha solicitação do serviço pelo celular, o agendamento foi confirmado e no outro dia quando cheguei em meu apartamento estava tudo devidamente limpo."'
                 , color: 'gray', fundo: require('@/assets/fundo (14).png') },
-                { text: 'Gostei muito da praticidade, do fato de vocês disponibilizarem materiais de limpeza. Eu não sou muito atento a comprar esse tipo de coisa no mercado e não sei exatamente o que a diarista prefere usar.', color: 'gray', fundo: require('@/assets/fundo (14).png') },
-                { text: 'O atendimento [da uochi] foi impecável. A profissional enviada - Cleia, um amor de pessoa: super simpática, cuidadosa e organizada. Estendeu seu período de trabalho, pois uma encomenda específica (arrumar guarda-roupas) tomou quase toda manhã e ficou perfeito. Até umas panelas que estavam com manchas ficaram brilhando! Tive que sair resolver algumas coisas e me senti bastante seguro em deixar a casa nas mãos dela. Dois pontos que acho muito importantes: agendei de um dia para o outro e o pagamento por transferência: nunca tenho dinheiro em espécie e normalmente esse tipo de serviço precisa ser remunerado assim. Muito obrigado Olimpo e Cleia!', color: 'gray', fundo: require('@/assets/fundo (14).png') }
+                { subtitulo:"Edson - Curitiba, PR",
+                  text: 'Gostei muito da praticidade, do fato de vocês disponibilizarem materiais de limpeza. Eu não sou muito atento a comprar esse tipo de coisa no mercado e não sei exatamente o que a diarista prefere usar.', color: 'gray', fundo: require('@/assets/fundo (14).png') },
+                { subtitulo:"Randy Rachwal - Curitiba, PR",text: 'O atendimento [da uochi] foi impecável. A profissional enviada - Cleia, um amor de pessoa: super simpática, cuidadosa e organizada. Estendeu seu período de trabalho, pois uma encomenda específica (arrumar guarda-roupas) tomou quase toda manhã e ficou perfeito. Até umas panelas que estavam com manchas ficaram brilhando! Tive que sair resolver algumas coisas e me senti bastante seguro em deixar a casa nas mãos dela. Dois pontos que acho muito importantes: agendei de um dia para o outro e o pagamento por transferência: nunca tenho dinheiro em espécie e normalmente esse tipo de serviço precisa ser remunerado assim. Muito obrigado Olimpo e Cleia!', color: 'gray', fundo: require('@/assets/fundo (14).png') }
             ]
         }
     }

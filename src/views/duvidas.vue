@@ -1,4 +1,5 @@
 <template>
+  
   <div>
     <section class="section is-medium">
     <div class="content is-medium has-text-centered">
