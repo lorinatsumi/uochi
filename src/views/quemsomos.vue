@@ -52,7 +52,7 @@
         <h4 class="subtitle has-text-centered">Valorização do tempo</h4>
        </div>
       <div class="column">
-         <img src="@/assets/foguetee.png" class="valores">
+         <img src="@/assets/foguete.png" class="valores">
         <h5 class="subtitle has-text-centered">Inovação constante</h5>    </div>
      </div>
 </div>

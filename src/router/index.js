@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import Home from '@/views/home.vue';
-import Contato from '@/views/contato.vue';
+import Comofunciona from '@/views/comofunciona.vue';
 import Duvidas from '@/views/duvidas.vue';
 import Quemsomos from '@/views/quemsomos.vue';
 import Parceiros from '@/views/parceiros.vue';
@@ -15,9 +15,9 @@ const routes = [
         meta: {  }
     },
     {
-        path: '/contato',
-        name: 'Contato',
-        component: Contato,
+        path: '/comofunciona',
+        name: 'Comofunciona',
+        component: Comofunciona,
         meta: {  }
     },
     {

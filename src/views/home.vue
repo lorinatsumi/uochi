@@ -25,12 +25,17 @@
             </div>
             
     </div>
-
+       
       <section class="section is-medium ">
+                <hr style= "width: 70px;margin:auto;background-color:#2400ff">
+        <br>
         <div class="content is-medium has-text-centered">
           <h1 class="title">Encontrar uma pessoa de confiança para cuidar do</h1>
           <h1 class="title">seu lar nunca foi tão fácil!</h1>
         </div>
+
+        <hr style= "width: 70px;margin:auto;background-color:#2400ff">
+        <br>
 
         <div class="columns">
       

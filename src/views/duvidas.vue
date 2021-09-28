@@ -3,8 +3,6 @@
     <section class="section is-medium">
     <div class="content is-medium has-text-centered">
          <h2>Dúvidas frequentes</h2>
-  
-  
 
   
      <section class= "section is-small">
