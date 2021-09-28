@@ -1,6 +1,7 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
+$gap:0;
 // Set your colors
 $primary: #2400ff;
 $primary-light: findLightColor($primary);

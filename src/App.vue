@@ -1,5 +1,5 @@
 <template>
-  <div class="container is-widescreem">
+  <div class="container is-fluid">
 
     <v-nav-bar />
 

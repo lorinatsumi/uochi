@@ -9,7 +9,7 @@
             <b-navbar-item href="#/">
                 Início
             </b-navbar-item>
-            <b-navbar-item href="#/comofunciona">
+            <b-navbar-item href="#/contato">
                 Como funciona
             </b-navbar-item>
             <b-navbar-item href="#/quemsomos">
@@ -17,6 +17,9 @@
             </b-navbar-item>
             <b-navbar-item href="#/parceiros">
                 Profissionais
+            </b-navbar-item>
+            <b-navbar-item href="#/orcamento">
+                Orçamento
             </b-navbar-item>
             
         </template>
@@ -29,9 +32,11 @@
                     </a>
                     <a class="button is-light">
                         Log in
-                </a>
-              </div>
+                    </a>
+                </div>
             </b-navbar-item>
         </template>
     </b-navbar>
+    
 </template>
+
