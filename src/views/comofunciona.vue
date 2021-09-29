@@ -12,12 +12,12 @@
  </div>
  
  <div class="column is-2.5 has-text-centered has-background-white">
-     <img src="@/assets/horario.png"
+     <img src="@/assets/horarioo.png"
      class="comofunciona">
      <h4 class="subtitle has-text-centered">Escolha a data e horário que deseja o serviço</h4>
  </div>
  <div class="column is-2.5 has-text-centered has-background-white">
-    <img src="@/assets/heroi.png"
+    <img src="@/assets/pacote.png"
       class="comofunciona">
      <h4 class="subtitle has-text-centered">Selecione o melhor pacote para você</h4>
    </div>
@@ -27,7 +27,7 @@
      <h4 class="subtitle has-text-centered">  Escolha um profissional disponível</h4>
    </div>
  <div class="column is-2.5 has-text-centered  has-background-white">
-    <img src="@/assets/heroi.png"
+    <img src="@/assets/pagar.png"
     class="comofunciona">
     <h4 class="subtitle has-text-centered">Realize o pagamento online</h4>
  </div>
@@ -48,20 +48,20 @@
      <nav class="level">
  <div class="level-item has-text-centered">
    <div>
-     <p class="title is-size-2 has-text-link-dark">123</p>
-     <p class="heading is-size-6 has-text-link-dark">Atendimentos realizados</p>
+     <p class="title is-size-2 has-text-primary">123</p>
+     <p class="heading is-size-6 has-text-primary">Atendimentos realizados</p>
    </div>
  </div>
  <div class="level-item has-text-centered">
    <div>
-     <p class="title is-size-2 has-text-link-dark">R$5.345</p>
-     <p class="heading is-size-6 has-text-link-dark">Repassado para as profissionais</p>
+     <p class="title is-size-2 has-text-primary">R$5.345</p>
+     <p class="heading is-size-6 has-text-primary">Repassado para as profissionais</p>
    </div>
  </div>
  <div class="level-item has-text-centered">
    <div>
-     <p class="title is-size-2 has-text-link-dark">100</p>
-     <p class="heading is-size-6 has-text-link-dark">Profissionais cadastradas</p>
+     <p class="title is-size-2 has-text-primary">100</p>
+     <p class="heading is-size-6 has-text-primary">Profissionais cadastradas</p>
    </div>
  </div>
 </nav>
@@ -98,7 +98,9 @@
  </div>
  <div class="column">
    <div class="block">
- <b-button type="is-primary subtitle" expanded>Quero me Cadastrar</b-button>
+    <a href="#/cadastro"> 
+    <b-button type="is-primary subtitle" expanded>Quero me Cadastrar</b-button>
+    </a>
  </div>
  </div>
  <div class="column">
@@ -136,7 +138,7 @@
        <b-field label="Digite sua mensagem">
            <b-input maxlength="200" type="textarea"></b-input>
        </b-field>
-       <button class="button is-info is-rounded">Enviar</button>
+       <button class="button is-primary is-rounded">Enviar</button>
     </div>
     </div>
   </div>

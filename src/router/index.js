@@ -7,6 +7,7 @@ import Duvidas from '@/views/duvidas.vue';
 import Quemsomos from '@/views/quemsomos.vue';
 import Parceiros from '@/views/parceiros.vue';
 import Orcamento from '@/views/orcamento.vue';
+import Cadastro from '@/views/cadastro.vue';
 
 const routes = [
     {
@@ -43,6 +44,12 @@ const routes = [
         path: '/orcamento',
         name: 'Orcamento',
         component: Orcamento,
+        meta: {  }
+    },
+    {
+        path: '/cadastro',
+        name: 'Cadastro',
+        component: Cadastro,
         meta: {  }
     }
 ]
