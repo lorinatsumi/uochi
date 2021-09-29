@@ -1,27 +1,31 @@
 <template>
-<div>
+ <div>
   <div>
-    <section class="has-bg-img hero" :style="{height:'513px', backgroundImage: 'url(' + require('@/assets/capaaa.png') + ')' }">
+    <section class="has-bg-img hero" :style="{height:'500px', backgroundImage: 'url(' + require('@/assets/fundooo.png') + ')' }">
+     <section class="section">
       <div class="hero-body">
-
-            <p class="subtitle has-text-grey-dark"> 
-        </p>
-            <h1 class="title has-text-grey-dark is-size-1"> Nossa História</h1>
-
+            <p class="subtitle has-text-grey-dark"></p>
+            <h1 class="title has-text-grey-dark is-size-1"> Quem somos</h1><hr style="background-color:#2400ff;width: 400px; height:3px">
+        <div class= "column is-6">
         <div class="colums subtitle has-text-grey-dark">
-          <div class= "column is-8">
-          O segredo do sucesso de uma boa receita são os ingredientes e o modo de preparo correto. Por isso, sempre use alimentos de boa qualidade e preste muito atenção durante os processo. Assim, você garante um bolo simples fofinho e cheio de sabor!  </div>
+          A Uochi nasceu quando percebemos a dificuldade que as pessoas tinham de encontrar uma profissional doméstica de confiança e qualidade, assim teve início nossa história.
+           </div>
+         <div class="colums subtitle has-text-grey-dark">   Formado por um grupo de estudantes de Negócios Digitais apaixonados por inovação e tecnologia, a Uochi já passou por diversas mudanças e atualmente está em fase de MVP.
+            </div>
+
         </div>
       </div>
     </section>
+    </section>
   </div>
+
 
 
   <div>
      <section class="section">
        <div class= "columns">
         <div class="column is-4">
-             <h1 class="title has-text-grey-dark is-size-2">Nossa Missão</h1> </div>
+             <h1 class="title has-text-grey-dark is-size-1">Nossa Missão</h1> </div>
        <div class= "column is-4">
          Descomplicar a limpeza, proporcionando tempo, praticidade e conforto para o dia a dia das pessoas.</div>
       <div class= "column is-4"> 
@@ -29,10 +33,9 @@
      </div>
    </section>
   </div>
-
-
-<div class="box">
-  <h1 class="title has-text-centered has-text-grey-dark">Valores</h1>
+  
+  <div class="box">
+   <h1 class="title has-text-centered has-text-grey-dark is is-size-1">Valores</h1>
     <div class="columns has-text-centered">
       <div class="column">
          <img src="@/assets/heroi.png"
@@ -46,7 +49,7 @@
       <div class="column">
          <img src="@/assets/crescimento.png"
          class="valores">
-        <h4 class="subtitle has-text-centered">Crescimento mútuo</h4>   </div>
+        <h4 class="subtitle has-text-centered">Crescimento mútuo</h4></div> 
       <div class="column">
          <img src="@/assets/tempo.png" class="valores">
         <h4 class="subtitle has-text-centered">Valorização do tempo</h4>
@@ -55,10 +58,11 @@
          <img src="@/assets/foguete.png" class="valores">
         <h5 class="subtitle has-text-centered">Inovação constante</h5>    </div>
      </div>
-</div>
+   </div>
 
 
- <div class="box">
+
+
   <div>
      <section class="section">
        <div class= "columns">
@@ -81,7 +85,7 @@
     </div>
    </section>
   </div>
-  </div>
+  
 
 
 </div>

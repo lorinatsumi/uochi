@@ -6,14 +6,14 @@
 
         <div class="column is-5">
           <section class="section">
-             <div class="content is-large">
+            <div class="content is-large">
             <h1 class="title is-size-1">Limpeza descomplicada.</h1>
             </div>
           
-          <h2 class="subtitle">Otimize seu tempo. Nós cuidamos do seu conforto!</h2>
+            <h2 class="subtitle">Otimize seu tempo. Nós cuidamos do seu conforto!</h2>
           
 
-           <div class="buttons">
+            <div class="buttons">
             <b-button type="is-primary" expanded>Agendar serviço</b-button>
             
           </div>
@@ -22,7 +22,7 @@
         
           <div class="column is-7">
             <img src="@/assets/yes (6).png">
-            </div>
+          </div>
             
     </div>
        

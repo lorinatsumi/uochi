@@ -8,6 +8,7 @@ import Quemsomos from '@/views/quemsomos.vue';
 import Parceiros from '@/views/parceiros.vue';
 import Orcamento from '@/views/orcamento.vue';
 import Cadastro from '@/views/cadastro.vue';
+import Perfil from '@/views/perfil.vue';
 
 const routes = [
     {
@@ -50,6 +51,12 @@ const routes = [
         path: '/cadastro',
         name: 'Cadastro',
         component: Cadastro,
+        meta: {  }
+    },
+    {
+        path: '/perfil',
+        name: 'Perfil',
+        component: Perfil,
         meta: {  }
     }
 ]

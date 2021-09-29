@@ -34,9 +34,11 @@
                 <b-button
                     label="Fechar"
                     @click="$emit('close')" />
+                <a href="#/perfil">
                 <b-button
                     label="Entrar"
                     type="is-primary" />
+                  </a>
              </footer>
          </div>
      </form>

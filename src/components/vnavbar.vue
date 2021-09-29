@@ -24,11 +24,15 @@
            </b-navbar-item>
   </template>
  
-        <template #end>
+        <template #end> 
            <b-navbar-item tag="div">
                <div class="buttons">
+                  <a href="#/cadastro"> 
                    <a class="button is-primary">
                      <strong>Cadastrar</strong></a>
+                     </a>
+
+                    
                    <a class="button is-light"
                      @click="isComponentModalActive = true">
                        Entrar

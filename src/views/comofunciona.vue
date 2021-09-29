@@ -40,12 +40,11 @@
  <h4 class="subtitle"></h4>
 </section>
  
-<section class="hero-body is-medium has-background-white-ter">
- <div class="container.is-fullwidth"></div>
+<section class="hero is-medium has-background-primary-light">
  <div class="hero-body">
      <h1 class="title"></h1>
       <h1 class="title has-text-centered has-text-grey-dark">Queremos, juntos, ser a maior plataforma de serviços domésticos de Curitiba</h1>
-     <nav class="level">
+    <nav class="level">
  <div class="level-item has-text-centered">
    <div>
      <p class="title is-size-2 has-text-primary">123</p>
@@ -108,7 +107,7 @@
 </div>
 </section>
  
-<section class="hero has-background-white-ter">
+<section class="hero has-background-primary-light">
  <div class="container.is-fullwidth"></div>
   <div class="hero-body">
    <div class="columns is-vcentered">
