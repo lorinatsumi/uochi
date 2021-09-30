@@ -16,11 +16,8 @@
            <b-navbar-item href="#/quemsomos">
                Quem somos
            </b-navbar-item>
-           <b-navbar-item href="#/parceiros">
-               Profissionais
-           </b-navbar-item>
-           <b-navbar-item href="#/orcamento">
-               Orçamento
+           <b-navbar-item href="#/agendar">
+               Agendamento
            </b-navbar-item>
   </template>
  

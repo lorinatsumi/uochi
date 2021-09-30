@@ -6,9 +6,10 @@ import Comofunciona from '@/views/comofunciona.vue';
 import Duvidas from '@/views/duvidas.vue';
 import Quemsomos from '@/views/quemsomos.vue';
 import Parceiros from '@/views/parceiros.vue';
-import Orcamento from '@/views/orcamento.vue';
+import Agendamento from '@/views/agendar.vue';
 import Cadastro from '@/views/cadastro.vue';
 import Perfil from '@/views/perfil.vue';
+import Profissionais from '@/views/profissionais.vue';
 
 const routes = [
     {
@@ -42,9 +43,9 @@ const routes = [
         meta: {  }
     },
     {
-        path: '/orcamento',
-        name: 'Orcamento',
-        component: Orcamento,
+        path: '/agendar',
+        name: 'Agendamento',
+        component: Agendamento,
         meta: {  }
     },
     {
@@ -57,6 +58,12 @@ const routes = [
         path: '/perfil',
         name: 'Perfil',
         component: Perfil,
+        meta: {  }
+    },
+    {
+        path: '/profissionais',
+        name: 'Profissionais',
+        component: Profissionais,
         meta: {  }
     }
 ]

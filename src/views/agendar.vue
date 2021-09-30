@@ -72,6 +72,7 @@
         </b-field>
   </div>
 
+<a href ="#/profissionais"> <b-button type="is-primary">Escolher profissional</b-button> </a>
 
   </section>
  </div> 

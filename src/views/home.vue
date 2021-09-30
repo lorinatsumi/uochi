@@ -14,7 +14,7 @@
           
 
             <div class="buttons">
-            <b-button type="is-primary" expanded>Agendar serviço</b-button>
+            <b-button type="is-primary" expanded>Agendar serviço</b-button> 
             
           </div>
           </section>
