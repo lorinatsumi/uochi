@@ -16,10 +16,15 @@ import { faJs, faVuejs } from "@fortawesome/free-brands-svg-icons";
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 library.add(fas, faJs, faVuejs);
 Vue.component('vue-fontawesome', FontAwesomeIcon);
 
-
+Vue.use(VueAxios, axios);
+//colocar aqui a URL do seu backend
+Vue.axios.defaults.baseURL = "https://uochi-backend.camilymayumi.repl.co/api/";
 
 
 Vue.config.productionTip = false

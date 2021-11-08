@@ -12,11 +12,11 @@
           
             <h2 class="subtitle">Otimize seu tempo. Nós cuidamos do seu conforto!</h2>
           
-
+          <a href="#/agendar"> 
             <div class="buttons">
             <b-button type="is-primary" expanded>Agendar serviço</b-button> 
-            
           </div>
+          </a>
           </section>
         </div>        
         
@@ -62,20 +62,44 @@
 
     <div class="columns has-text-centered">
       <div class="column">
-         <img src="@/assets/icone (11).png"
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <img src="@/assets/icone (11).png"
          class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Praticidade</h4>
-        <h7>Tenha seu lar limpo novamente com alguns cliques</h7>       
+                  <br>
+                  <br>
+                  <h4 class="subtitle has-text-centered">Praticidade</h4>
+                  <h7>Tenha seu lar limpo novamente com apenas alguns cliques.</h7>   
+                </div> 
+              </div>
+            </div>   
       </div>
       <div class="column">
-         <img src="@/assets/liberdade.png" class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Confiança e liberdade de escolha</h4>
-        <h7>Conte com um perfil completo dos profissionais e avaliações</h7>       
+        <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <img src="@/assets/liberdade.png" class="por-que-uochi">
+                  <br>
+                  <br>
+                  <h4 class="subtitle has-text-centered">Confiança e liberdade de escolha</h4>
+                  <h7>Conte com um perfil completo, histórico e avaliação dos profissionais cadastrados.</h7>
+                </div> 
+              </div>
+            </div>        
       </div>
       <div class="column">
-         <img src="@/assets/personalizado.png" class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Serviço personalizado pra você</h4>   
-         <h7>Escolha a quantidade de horas e pague por aquilo que você realmente precisa</h7>     
+        <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <img src="@/assets/personalizado.png" class="por-que-uochi">
+                  <br>
+                  <br>
+                  <h4 class="subtitle has-text-centered">Serviço personalizado pra você</h4>   
+                  <h7>Escolha a quantidade de horas e pague por aquilo que você realmente precisa</h7>
+                </div>
+              </div>
+            </div>     
       </div>
      
     </div>
@@ -87,15 +111,30 @@
         &nbsp;
       </div>     
       <div class="column is-4">
-         <img src="@/assets/pagamento.png" class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Pagamento online</h4>
-         <h7>Pague de onde estiver de forma prática</h7>      
+        <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <img src="@/assets/pagamento.png" class="por-que-uochi">
+                  <br>
+                  <br>
+                  <h4 class="subtitle has-text-centered">Pagamento online</h4>
+                  <h7>Pague de onde estiver de forma prática e rápida.</h7>
+                </div>
+              </div>
+            </div>     
       </div>
       <div class="column is-4">
-         <img src="@/assets/produtos.png" class="por-que-uochi">
-        <h4 class="subtitle has-text-centered">Produtos de limpeza opcionais</h4> 
-         <h7 class = "has-text-centered"> Não se preocupe com quais produtos comprar
-           <br> e ainda economize dinheiro </h7>  
+        <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <img src="@/assets/produtos.png" class="por-que-uochi">
+                  <br>
+                  <br>
+                  <h4 class="subtitle has-text-centered">Produtos de limpeza opcionais</h4> 
+                  <h7 class = "has-text-centered"> Não se preocupe com quais produtos comprar e ainda economize dinheiro! </h7>  
+                </div>
+              </div>
+            </div>
            
       </div>
       <div class="column is-2">

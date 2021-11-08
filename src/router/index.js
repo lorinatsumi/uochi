@@ -10,6 +10,7 @@ import Agendamento from '@/views/agendar.vue';
 import Cadastro from '@/views/cadastro.vue';
 import Perfil from '@/views/perfil.vue';
 import Profissionais from '@/views/profissionais.vue';
+import Termos from '@/views/termos.vue';
 
 const routes = [
     {
@@ -64,6 +65,12 @@ const routes = [
         path: '/profissionais',
         name: 'Profissionais',
         component: Profissionais,
+        meta: {  }
+    },
+    {
+        path: '/termos',
+        name: 'Termos',
+        component: Termos,
         meta: {  }
     }
 ]

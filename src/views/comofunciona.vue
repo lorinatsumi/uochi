@@ -1,11 +1,14 @@
 <template>
-<section class="section">
- <h1 class="title has-text-centered is-size-1">O que é Uochi?</h1>
+<section class="section is-small">
+ <h2 class="title has-text-centered is-size-1">O que é Uochi?</h2>
+
+ <br>
  <h2 class="subtitle has-text-centered">
-   Conectamos profissionais de limpeza mais próximos do seu lar </h2>
- 
+   Conectamos você e profissionais de limpeza mais próximos do seu lar! </h2>
+<br>
 <hr style="background-color:#2400ff; height:3px">
- 
+<br> 
+
 <div class="columns ">
  <div class="column is 1 has-text-centered  has-background-white">
     <h4 class="subtitle has-text-centered"></h4>
@@ -19,7 +22,7 @@
  <div class="column is-2.5 has-text-centered has-background-white">
     <img src="@/assets/pacote.png"
       class="comofunciona">
-     <h4 class="subtitle has-text-centered">Selecione o melhor pacote para você</h4>
+     <h4 class="subtitle has-text-centered">Selecione o tempo de serviço necessário e deixe suas intruções</h4>
    </div>
  <div class="column is-2.5 has-text-centered has-background-white">
    <img src="@/assets/selecionar.png"
@@ -47,19 +50,19 @@
     <nav class="level">
  <div class="level-item has-text-centered">
    <div>
-     <p class="title is-size-2 has-text-primary">123</p>
+     <p class="title is-size-2 has-text-primary">+3.500</p>
      <p class="heading is-size-6 has-text-primary">Atendimentos realizados</p>
    </div>
  </div>
  <div class="level-item has-text-centered">
    <div>
-     <p class="title is-size-2 has-text-primary">R$5.345</p>
-     <p class="heading is-size-6 has-text-primary">Repassado para as profissionais</p>
+     <p class="title is-size-2 has-text-primary">+R$ 865.000</p>
+     <p class="heading is-size-6 has-text-primary">repassado para profissionais parceiros</p>
    </div>
  </div>
  <div class="level-item has-text-centered">
    <div>
-     <p class="title is-size-2 has-text-primary">100</p>
+     <p class="title is-size-2 has-text-primary">+100</p>
      <p class="heading is-size-6 has-text-primary">Profissionais cadastradas</p>
    </div>
  </div>
