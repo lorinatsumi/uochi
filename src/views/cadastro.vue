@@ -60,7 +60,8 @@
       <div class="columns">
         <div class="column">
           <b-field label="Data de Nascimento">
-              
+             <b-input
+             type="date" v-model="usuario.dataNascimento" maxlength="10"></b-input>
           </b-field>
         </div>
 
