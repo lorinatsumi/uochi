@@ -11,6 +11,9 @@ import Cadastro from '@/views/cadastro.vue';
 import Perfil from '@/views/perfil.vue';
 import Profissionais from '@/views/profissionais.vue';
 import Termos from '@/views/termos.vue';
+import Pagamento from '@/views/pagamento.vue';
+import MeusAgendamentos from '@/views/meusagendamentos.vue';
+
 
 const routes = [
     {
@@ -72,7 +75,19 @@ const routes = [
         name: 'Termos',
         component: Termos,
         meta: {  }
-    }
+    },
+    { 
+        path: '/pagamento',
+        name: 'Pagamento',
+        component: Pagamento,
+        meta: {  }
+    },
+    { 
+        path: '/meusagendamentos',
+        name: 'MeusAgendamentos',
+        component: MeusAgendamentos,
+        meta: {  }
+    }    
 ]
 
 Vue.use(VueRouter);

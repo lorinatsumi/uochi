@@ -7,7 +7,7 @@
  
 
  <div class="columns">
-    <div class="column">
+    <div v-for= "(profissional, index) in profissionais" :key="index" class ="column">
 
 
       <div class="box">
@@ -24,9 +24,9 @@
         <p>
           <br>
           <strong class = 
-          "title is-6" @click="isCardModalCleia = true ">Rosicleia Aparecida Francor</strong>
+          "title is-6" @click="isCardModalCleia = true ">{{profissional.nome}}</strong>
           <br>
-          <small class = "subtitle is-6" @click="isCardModalCleia = true" >Mais conhecida como CLEIA</small>
+          <small class = "subtitle is-6" @click="isCardModalCleia = true" >Mais conhecida como {{profissional.apelido}}</small>
           
           <br>
           <br>
@@ -40,86 +40,7 @@
         </p>
       </div>
        <div class="buttons">
-            <b-button type="is-primary" size="is-small" outlined>Contratar</b-button>
-        </div> 
-    </div>
-  </article>
-</div>
-
-</div>
-
-
-<div class="column">
-
-
-      <div class="box">
-        <article class="media">
-          <div class="media-left">
-            <figure class="image is-120x120">
-        <img src="@/assets/ivonetesmall.png" alt="Image">
-            </figure>
-          </div>
-          
-
-          <div class="media-content">
-            <div class="content">
-        <p>
-          <br>
-          <strong class = "title is-6" @click="isCardModalNete = true"> Ivonete Butcher da Silva</strong>
-          <br>
-          <small class = "subtitle is-6" @click="isCardModalNete = true">Mais conhecida como NETE</small>
-          
-          <br>
-          <br>
-          <small> Atendimentos com a Uochi: 2
-      <br>
-      2 Avaliações
-      <br>
-      Nota média: 5,0
-      </small>
-        </p>
-      </div>
-       <div class="buttons" >
-            <b-button type="is-primary" size="is-small" outlined>Contratar</b-button>
-        </div> 
-    </div>
-  </article>
-</div>
-
-</div>
-
-
-<div class="column">
-
-
-      <div class="box">
-        <article class="media">
-          <div class="media-left">
-            <figure class="image is-120x120">
-        <img src="@/assets/adrismall.png" alt="Image">
-            </figure>
-          </div>
-          
-
-          <div class="media-content">
-            <div class="content">
-        <p>
-          <br>
-          <strong class = "title is-6" @click="isCardModalAdri = true">Adriane da Guia Veloso</strong>
-          <br>
-          <small class = "subtitle is-6" @click="isCardModalAdri = true">Mais conhecida como ADRI</small>
-          
-          <br>
-          <br>
-          <small>
-          Seja o primeiro o meu primeiro cliente com a Uochi :)
-          </small>
-          <br>
-          <br>
-        </p>
-      </div>
-       <div class="buttons" >
-            <b-button type="is-primary" size="is-small" outlined>Contratar</b-button>
+            <b-button @click="contratar(profissional)" type="is-primary" size="is-small" outlined>Contratar</b-button>
         </div> 
     </div>
   </article>
@@ -130,7 +51,16 @@
 
 
 
+
+
+
+
 </div>
+
+
+<section class = "has-text-centered mt-5">
+<a href ="#/pagamento"> <b-button type="is-primary">Ir para pagamento</b-button> </a>
+</section>
 
 <br>
 
@@ -252,6 +182,7 @@
     export default {
         data() {
             return {
+                profissionais:{},
                 isImageModalCleia: false,
                 isCardModalCleia: false,
                 isImageModalNete: false,
@@ -259,6 +190,34 @@
                 isImageModalAdri: false,
                 isCardModalAdri: false
             }
+        },
+        created() {
+          var self = this;
+          //Chama a api para buscar as pacotes
+          this.axios.get('profissionais/').then((response) => {
+            self.profissionais = response.data;
+          }) 
+        },
+        methods: {
+          contratar(profissional) {
+            console.log('profissional', profissional);
+            var agendamento = this.$route.query.agendamento;
+            console.log('agendamento', agendamento);
+
+            
+            var self = this;
+            var data = {
+              profissional: profissional.id
+            }
+
+            //Chama a api para criar o usuário
+            this.axios.put('agendamentos-update/' + agendamento + "/", data).then((response) => {
+              console.log(response);
+              self.$buefy.dialog.alert('Agendamento realizado com sucesso')
+              self.$router.push({ name: 'Pagamento', query: { agendamento: agendamento }});
+            })
+            
+          }                     
         }
     }
 </script>

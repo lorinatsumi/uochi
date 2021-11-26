@@ -61,13 +61,13 @@
         <div class="column">
           <b-field label="Data de Nascimento">
              <b-input
-             type="date" v-model="usuario.dataNascimento" maxlength="10"></b-input>
+             type="date" maxlength="10"></b-input>
           </b-field>
         </div>
 
         <div class="column">
           <b-field label="CPF">
-              <b-input placeholder="Digite seu CPF" type="number" v-model="usuario.cpf" maxlength="30"></b-input>
+              <b-input placeholder="Digite seu CPF" type="text" v-model="usuario.cpf" maxlength="30"></b-input>
           </b-field>
         </div>
       </div>
@@ -132,11 +132,7 @@
         </div> 
 
 
-        <b-field label="Criar senha"
-            type="is-warning"
-            :message="['Senha é muito curta', 'Senha deve ter no mínimo 6 caracteres']">
-            <b-input v-model="usuario.senha" type="password" maxlength="30"></b-input>
-        </b-field> 
+      
 
         <b-field>
             <b-checkbox v-model="usuario.pets">
@@ -182,19 +178,20 @@ export default {
               email: '',
               apelido: '', 
               telefone: '',
-              senha: '',
               cpf: '',
               endereco: '',
               complemento: '',
               pontoReferencia: '',
-              pets: '',
+              pets: false,
               termosCondicoes: false,
               politicaPrivacidade: false,
               cidade: null,
               estado: null,
               bairro: null,
             },
-            cidades: []
+            cidades: [],
+            estados: [],
+            bairros: []
         }
     },  
     created() {
@@ -202,26 +199,47 @@ export default {
       //Chama a api para buscar as cidades
       this.axios.get('cidades/').then((response) => {
         self.cidades = response.data;
-      })  
+      })
+      this.axios.get('estados/').then((response) => {
+        self.estados = response.data;
+      }) 
+      this.axios.get('bairros/').then((response) => {
+        self.bairros = response.data;
+      })
+      
+      //Busca o usuario logado para já preencher o e-mail na tela de cadastro
+      this.axios.get('currentuser/').then((response) => {
+        console.log(response);
+        self.currentUser = response.data;
+        if(response.data) {
+          self.usuario.email = response.data.username;
+        }
+      });
+
     },
     methods: {
       cadastrar() {
           var self = this;
-          if (!this.usuario.termosCondicoes) {
-            self.$buefy.dialog.alert('Vocês precisa aceitar os Termos e Condições')
-          } else if (!this.usuario.politicaPrivacidade) {
-            self.$buefy.dialog.alert('Vocês precisa aceitar as Políticas de Privacidade')
-          } else {
-            //Chama a api para criar o usuário
-            this.axios.post('usuarios-create/', this.usuario).then((response) => {
-              console.log(response);
-              //Fecha o modal
-              self.$emit('close');
-              //Mostra a mensagem de sucesso
-              self.$buefy.dialog.alert('Cadastro realizado com sucesso!')
-            })
-          }
+          if(this.currentUser == null) {
+            self.$buefy.dialog.alert('Você ainda não está logado no site. Favor fazer o login com o seu gmail no menu Entrar/Cadastrar!');
+          }else{
+            
+            if (!this.usuario.termosCondicoes) {
+              self.$buefy.dialog.alert('Vocês precisa aceitar os Termos e Condições')
+            } else if (!this.usuario.politicaPrivacidade) {
+              self.$buefy.dialog.alert('Vocês precisa aceitar as Políticas de Privacidade')
+            } else {
+              //Chama a api para criar o usuário
+              this.axios.post('usuarios-create/', this.usuario).then((response) => {
+                console.log(response);
+                //Fecha o modal
+                //self.$emit('close');
+                //Mostra a mensagem de sucesso
+                self.$buefy.dialog.alert('Cadastro realizado com sucesso!')
+              })
+            }
                   
+          }
       }
     }  
 }

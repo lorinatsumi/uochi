@@ -101,7 +101,7 @@
 
     </div>
 
-
+    <a href ="#/pagamento"> <b-button type="is-primary">Ir para pagamento</b-button> </a>
 
 
 
